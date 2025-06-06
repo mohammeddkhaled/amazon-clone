@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header class="navbar">
+      <!-- nav-log -->
+      <div class="nav-logo">
+        <img
+          src="https://pngimg.com/uploads/amazon/amazon_PNG11.png"
+          alt="Amazon Logo"
+        />
+      </div>
 
+      <!-- nav-location -->
+      <div class="nav-location">
+        <div id="map-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="map-text">
+          <p>Deliver to</p>
+          <h5>India</h5>
+        </div>
+      </div>
+
+      <!-- nav-search -->
+      <div class="nav-search">
+        <select class="search-category">
+          <option>All Departments</option>
+          <option>Arts & Crafts</option>
+          <option>Automotive</option>
+          <option>Baby</option>
+          <option>Beauty & Personal Care</option>
+          <option>Books</option>
+          <option>Boys' Fashion</option>
+          <option>Computers</option>
+          <option>Deals</option>
+          <option>Digital Music</option>
+          <option>Electronics</option>
+          <option>Health & Household</option>
+          <option>Industrial & Scientific</option>
+          <option>Movies & TV</option>
+          <option>Prime Video</option>
+          <option>Tools & Home Improvement</option>
+          <option>Video Games</option>
+          <option>Women's Fashion</option>
+          <option>Sports & Outdoors</option>
+          <option>Pet Supplies</option>
+        </select>
+        <input type="text" placeholder="Search Amazon.in" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <!-- Language Dropdown -->
+      <div class="nav-language hover-popup">
+        <img src="\images\flag.jpeg" alt="flag" class="flag" />
+        <h4>EN ▼</h4>
+        <div class="popup">
+          <div class="chg-lan">
+            <p>change language</p>
+            <a href="#">learn more</a>
+          </div>
+          <br />
+          <ul class="language-link">
+            <li><a href="#">English - EN</a></li>
+            <hr />
+            <li><a href="#">हिन्दी - HI</a></li>
+            <li><a href="#">தமிழ் - TA</a></li>
+            <li><a href="#">తెలుగు - TE</a></li>
+            <li><a href="#">ಕನ್ನಡ - KN</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sign-in Dropdown -->
+      <div class="nav-signin hover-popup">
+        <p>Hello, Sign in</p>
+        <h4>Account & Lists ▼</h4>
+
+        <div class="popup">
+          <button>
+            <a
+              href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F%26linkCode%3Dsl2%26tag%3Dwww.amazon0a-20%26linkId%3D2caad3beac081615ad8bdd3a9777dd6d%26ref_%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+              >Sign In</a
+            >
+          </button>
+          <div class="new-customer">
+            <p>New customer?</p>
+            <a
+              href="https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26linkCode%3Dsl2%26linkId%3D2caad3beac081615ad8bdd3a9777dd6d%26tag%3Dwww.amazon0a-20%26ref_%3Dnav_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+              >Start here.</a
+            >
+          </div>
+          <div class="account-lists">
+            <div class="lists">
+              <ul>
+                <h4>Your Lists</h4>
+                <br />
+                <li><a href="#">Create a List</a></li>
+                <li><a href="#">Find a List or Register</a></li>
+              </ul>
+            </div>
+            <div class="account">
+              <ul>
+                <h4>Your Account</h4>
+                <br />
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Watchlist</a></li>
+                <li><a href="#">Music Library</a></li>
+                <li><a href="#">Browsing History</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Returns & Orders -->
+      <div class="nav-returns">
+        <p>Returns</p>
+        <h4>& Orders</h4>
+      </div>
+
+      <!-- Cart -->
+      <div class="nav-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <p>Cart</p>
+      </div>
+    </header>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

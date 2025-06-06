@@ -1,1 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e3e6e6;
+}
 
+/* ------------------ Navbar Base ------------------ */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  padding: 10px;
+  color: white;
+  gap: 8px;
+  width: 100vw;
+}
+
+.navbar .nav-logo,
+.navbar .nav-language,
+.navbar .nav-signin,
+.navbar .nav-returns,
+.navbar .nav-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 6px 8px;
+  border: 1px solid transparent;
+  transition: border 0.2s;
+}
+
+.navbar .nav-logo:hover,
+.navbar .nav-location:hover,
+.navbar .nav-language:hover,
+.navbar .nav-signin:hover,
+.navbar .nav-returns:hover,
+.navbar .nav-cart:hover {
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  background-color: #232f3e;
+  cursor: pointer;
+}
+
+/* ------------------ Logo ------------------ */
+.nav-logo img {
+  max-width: 100px;
+  padding: 5px;
+}
+
+/* ------------------ Location ------------------ */
+.nav-location {
+  display: flex;
+  padding: 8px;
+}
+.nav-location p {
+  margin: 0;
+  font-size: 12px;
+  color: #ccc;
+}
+.nav-location h5 {
+  margin: 0;
+}
+#map-icon {
+  margin-top: auto;
+}
+
+/* ------------------ Search Bar ------------------ */
+.nav-search {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0 10px;
+  gap: 0;
+}
+
+.nav-search:hover {
+  border: 2px solid yellow;
+  border-radius: 4px;
+}
+
+.nav-search select,
+.nav-search input,
+.nav-search button {
+  display: inline;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 7px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  height: 40px;
+}
+
+.nav-search select {
+  background-color: #f3f3f3;
+  border-radius: 4px 0 0 4px;
+  width: 50px;
+}
+
+.nav-search input {
+  flex: 1;
+  width: auto;
+  min-width: 200px;
+  padding-left: 10px;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+}
+
+.nav-search button {
+  background-color: #febd69;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  width: 40px;
+  font-size: 18px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------ Language, Signin, Returns ------------------ */
+.flag {
+  max-height: 15px;
+  max-width: 20px;
+  margin: 0px 2px 1px 0px;
+}
+
+.nav-language .flag,
+.nav-language h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-language,
+.nav-signin,
+.nav-returns,
+.nav-cart {
+  position: relative;
+  color: white;
+}
+
+.nav-signin h4,
+.nav-returns h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.nav-signin p,
+.nav-returns p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.nav-cart i {
+  font-size: 28px;
+  margin: 0px;
+}
+.nav-cart p {
+  margin: 0px;
+  font-size: 14px;
+}
+
+/* ------------------language Popup ------------------ */
+.popup {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  color: black;
+  padding: 12px;
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  width: 200px;
+  border-radius: 12px;
+}
+
+.chg-lan {
+  display: flex;
+  align-items: center;
+}
+.chg-lan a {
+  font-size: 12px;
+  margin-left: 5px;
+}
+.chg-lan p {
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.language-link {
+  list-style-type: none;
+  margin: 0px;
+}
+.language-link a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+}
+
+.language-link a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+
+/* ------------------------- account and list popup ---------------------------------- */
+.hover-popup .popup {
+  width: 400px;
+  margin-left: -300px;
+  border-radius: 12px;
+}
+
+.hover-popup .popup button {
+  max-width: max-content;
+  display: flex;
+  margin: auto;
+  padding-block: 4px;
+  padding-inline: 80px;
+  background-color: yellow;
+  border: none;
+  border-radius: 6px;
+}
+
+.hover-popup .popup button a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.new-customer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.new-customer a {
+  font-size: 12px;
+}
+
+.new-customer a:hover {
+  color: orangered;
+}
+
+.account-lists {
+  display: flex;
+  margin-top: 5px;
+  border-top: 0.1px solid rgb(235, 231, 231);
+}
+
+.lists {
+  border-right: 0.1px solid rgb(235, 231, 231);
+}
+
+.account-lists ul {
+  list-style-type: none;
+}
+
+.account-lists a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+.account-lists a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
